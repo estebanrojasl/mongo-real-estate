@@ -3,7 +3,7 @@ const ENV = process.env.NODE_ENV || "development";
 const config = require("../../config/" + ENV).config;
 
 mongoose
-  .connect(config.CnxString, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
