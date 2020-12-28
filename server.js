@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const config = require("./config/development").config;
+const ENV = process.env.NODE_ENV || "development";
+const config = require("./config/" + ENV).config;
 const { Estate, EstatesDb } = require("./src/entities/estate");
 require("./src/db/mongodb");
 const app = express();
@@ -92,7 +93,5 @@ app.delete("/api/v1/acamica/estate/:id", (req, res) => {
 });
 
 app.listen(config.Port, () => {
-  console.log(
-    `Server started at ${"../../config/" + process.env.NODE_ENV.config.Port}`
-  );
+  console.log(`Server started at ${config.Port}`);
 });
