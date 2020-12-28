@@ -17,7 +17,7 @@ app.get("/api/v1/acamica/health", (req, res) => {
 app.get("/api/v1/acamica/estate", (req, res) => {
   EstatesDb.find()
     .then((response) => res.status(200).json(response))
-    .catch((err) => res.status(200).json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 // Save Estate
