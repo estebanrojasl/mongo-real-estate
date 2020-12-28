@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const ENV = process.env.NODE_ENV || "development";
-const config = require("../../config/development").config;
+const config = require("../../config/" + ENV).config;
 
 mongoose
   .connect(config.CnxString, {
