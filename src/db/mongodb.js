@@ -7,4 +7,6 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("Mongo Db successfully connected"));
+  .then(() =>
+    console.log("Mongo Db successfully connected" + process.env.MONGODB_URI)
+  );
