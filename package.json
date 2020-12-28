@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/classes/48-actividad/server.js"
+    "dev": "nodemon src/real-estate-agency/server.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,6 @@
     "mongoose": "^5.9.15"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.6"
   }
 }
