@@ -3,4 +3,4 @@ const prodConfig = {
   CnxString:
     "mongodb+srv://admin:gKLAfxQPWYPVBfFH@cluster0.sjink.mongodb.net/real-estate?retryWrites=true&w=majority",
 };
-module.exports = { config };
+module.exports = { prodConfig };
