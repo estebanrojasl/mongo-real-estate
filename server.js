@@ -92,5 +92,7 @@ app.delete("/api/v1/acamica/estate/:id", (req, res) => {
 });
 
 app.listen(config.Port, () => {
-  console.log(`Server started at ${config.Port}`);
+  console.log(
+    `Server started at ${"../../config/" + process.env.NODE_ENV.config.Port}`
+  );
 });
