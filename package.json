@@ -1,27 +1,26 @@
 {
-  "name": "acamica-delilah-resto",
+  "name": "mongo-real-estate",
   "version": "1.0.0",
-  "description": "Proyecto donde se hará un seguimiento clase a clase del Bloque 3: Delilah Restó",
-  "main": "index.js",
+  "description": "Basic backend for real estate agency using mongoose connected to mongo atlas. For fun project.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilmardev/acamica-delilah-resto.git"
+    "url": "git+https://github.com/estebanrojasl/mongo-real-estate"
   },
   "keywords": [
     "node",
-    "js",
-    "acamica"
+    "js"
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wilmardev/acamica-delilah-resto/issues"
+    "url": "https://github.com/estebanrojasl/mongo-real-estate/issues"
   },
-  "homepage": "https://github.com/wilmardev/acamica-delilah-resto#readme",
+  "homepage": "https://github.com/estebanrojasl/mongo-real-estate#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cool-images": "^1.0.3",
