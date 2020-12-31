@@ -5,8 +5,10 @@ const config = require("./config/" + ENV).config;
 const { Estate, EstatesDb } = require("./src/entities/estate");
 require("./src/db/mongodb");
 const app = express();
+const cors = require("cors");
 
 app.use(bodyParser.json());
+app.use(cors());
 
 // Check api health
 app.get("/api/v1/acamica/health", (req, res) => {
