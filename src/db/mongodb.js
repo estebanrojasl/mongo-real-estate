@@ -8,3 +8,5 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("Mongo Db successfully connected"));
+
+//add all ips to whitelist on mongo atlas cluster for it to work
