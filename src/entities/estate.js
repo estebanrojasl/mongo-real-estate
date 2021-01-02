@@ -25,15 +25,15 @@ class Estate {
 const EstatesDb = mongoose.model(
   "Estates",
   {
-    Operation: String,
-    Kind: String,
-    Address: String,
-    Photos: String,
-    Spaces: String,
-    Area: Number,
-    Description: String,
-    Owner: String,
-    CreatedDate: Date,
+    operation: String,
+    kind: String,
+    address: String,
+    photos: String,
+    spaces: String,
+    area: Number,
+    description: String,
+    owner: String,
+    createdDate: Date,
   },
   "Estate"
 );
